@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {products, categories} from './data';
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+      <div className="welcome-message">
+        <h1>
+          Welcome to your blank canvas!
+        </h1>
+        <p>
+          Be sure to inspect and familiarize yourself with what data you will be working with. This is already imported for you from './data.js'.
+        </p>
+        <p>
+          There are {products.length} products and {categories.length} categories.
         </p>
       </div>
-    );
+    )
   }
-}
-
-export default App;
+};
