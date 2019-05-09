@@ -1,21 +1,22 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import {products, categories} from './data';
+import {Header} from './components/Header';
+import {Categories} from './components/Categories';
+import {Products} from './components/Products';
 
-export default class App extends Component {
-  render() {
-    return (
-      <div className="welcome-message">
-        <h1>
-          Welcome to your blank canvas!
-        </h1>
-        <p>
-          Be sure to inspect and familiarize yourself with what data you will be working with. This is already imported for you from './data.js'.
-        </p>
-        <p>
-          There are {products.length} products and {categories.length} categories.
-        </p>
-      </div>
-    )
-  }
+export default function App() {
+  return (
+    <>
+      <Header />
+      <main className="main">
+        <div class="sidebar">
+          <Categories items={categories} />
+        </div>
+        <div className="content">
+          <Products items={products} />
+        </div>
+      </main>
+    </>
+  );
 };
