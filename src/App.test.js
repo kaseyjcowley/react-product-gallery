@@ -12,6 +12,7 @@ describe('App', () => {
     const input = getByPlaceholderText('Search products by name');
     const value = 'Handcrafted Robot';
 
+    [value, value.toLowerCase()].forEach(value => {
     // 2. Do something/Perform an action
     fireEvent.change(input, {target: {value}});
 

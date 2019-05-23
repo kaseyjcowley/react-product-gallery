@@ -4,21 +4,20 @@ import {products, categories} from './data';
 import {Header} from './components/Header';
 import {Categories} from './components/Categories';
 import {Products} from './components/Products';
-import {Modal} from './components/Modal';
 
 export default function App() {
+  const [search, setSearch] = React.useState('');
   return (
     <>
-      <Header />
+      <Header search={search} setSearch={setSearch} />
       <main className="main">
         <div className="sidebar">
           <Categories items={categories} />
         </div>
         <div className="content">
-          <Products items={products} />
+          <Products items={products} search={search} />
         </div>
       </main>
-      <Modal product={products[0]} />
     </>
   );
 }
