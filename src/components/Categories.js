@@ -7,7 +7,7 @@ export function Categories(props) {
       <h3 style={{textTransform: 'uppercase'}}>All Categories</h3>
       <div className="categories">
         {props.items.map(category => (
-          <a href="#" className="category">{category.name}</a>
+          <a key={category.id} href="#" className="category">{category.name}</a>
         ))}
       </div>
     </>

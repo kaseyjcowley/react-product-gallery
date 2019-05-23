@@ -11,7 +11,7 @@ export default function App() {
     <>
       <Header />
       <main className="main">
-        <div class="sidebar">
+        <div className="sidebar">
           <Categories items={categories} />
         </div>
         <div className="content">
