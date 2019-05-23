@@ -1,18 +1,19 @@
-html, body {
+html,
+body {
   margin: 0;
   height: 100%;
 }
 
 body {
-  font-family: "Source Sans Pro", serif;
+  font-family: 'Source Sans Pro', serif;
 }
 
 .header {
   padding: 50px 125px;
   display: flex;
   justify-content: space-evenly;
-  background-color: #F8CB00;
-  border-top: 5px solid #6364D8;
+  background-color: #f8cb00;
+  border-top: 5px solid #6364d8;
   align-items: center;
 }
 
@@ -31,7 +32,7 @@ body {
 
 .header__cart {
   width: 175px;
-  background-color: #6364D8;
+  background-color: #6364d8;
   border: 0;
   border-radius: 5px;
   text-transform: uppercase;
@@ -44,7 +45,8 @@ body {
   display: flex;
 }
 
-.sidebar, .content {
+.sidebar,
+.content {
   padding: 40px 0;
 }
 
@@ -63,26 +65,26 @@ body {
 
 .product {
   padding: 20px;
-  border: 1px solid #E4E4E4;
+  border: 1px solid #e4e4e4;
   border-radius: 5px;
   text-align: center;
-  box-shadow: 0 4px 14px 7px rgba(121,121,121,0.05);
+  box-shadow: 0 4px 14px 7px rgba(121, 121, 121, 0.05);
 }
 
 .product__price {
-  color: #F8CB00;
+  color: #f8cb00;
 }
 
 .category {
   display: block;
-  color: rgba(0,0,0,0.72);
+  color: rgba(0, 0, 0, 0.72);
   font-size: 16px;
   text-decoration: none;
   margin-bottom: 20px;
 }
 
 .category--active {
-  color: #F8CB00;
+  color: #f8cb00;
 }
 
 .modal__backdrop {
@@ -91,7 +93,7 @@ body {
   position: fixed;
   top: 0;
   z-index: 1;
-  background: rgba(255,255,255,0.8);
+  background: rgba(255, 255, 255, 0.8);
   display: flex;
   align-items: center;
 }
@@ -102,7 +104,7 @@ body {
   margin: auto;
   background-color: white;
   position: relative;
-  box-shadow: 0 16px 34px 7px rgba(121,121,121,0.1);
+  box-shadow: 0 16px 34px 7px rgba(121, 121, 121, 0.1);
   display: flex;
   flex-direction: column;
   padding: 25px;
@@ -118,7 +120,8 @@ body {
   justify-content: flex-end;
 }
 
-.modal__left, .modal__right {
+.modal__left,
+.modal__right {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -143,6 +146,5 @@ body {
 }
 
 .modal__price {
-  color: #F8CB00;
+  color: #f8cb00;
 }
-

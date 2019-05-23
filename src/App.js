@@ -21,4 +21,4 @@ export default function App() {
       <Modal product={products[0]} />
     </>
   );
-};
+}

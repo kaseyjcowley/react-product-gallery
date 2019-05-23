@@ -13,11 +13,17 @@ export function Modal({product}) {
         </div>
         <div className="modal__content">
           <div className="modal__left">
-            <img className="modal__image" src={product.images.large} alt={product.description} />
+            <img
+              className="modal__image"
+              src={product.images.large}
+              alt={product.description}
+            />
           </div>
           <div className="modal__right">
             <h1>{product.name}</h1>
-            <h1 className="modal__price"><strong>${product.price}</strong></h1>
+            <h1 className="modal__price">
+              <strong>${product.price}</strong>
+            </h1>
             <button className="modal__button__add-to-cart">Add to Cart</button>
             <p>{product.description}</p>
           </div>
