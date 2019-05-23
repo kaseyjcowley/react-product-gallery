@@ -4,6 +4,7 @@ import {products, categories} from './data';
 import {Header} from './components/Header';
 import {Categories} from './components/Categories';
 import {Products} from './components/Products';
+import {Modal} from './components/Modal';
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
           <Products items={products} />
         </div>
       </main>
+      <Modal product={products[0]} />
     </>
   );
 };
